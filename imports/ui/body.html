@@ -1,0 +1,65 @@
+<body>
+	<script src="https://unpkg.com/aos@next/dist/aos.js"></script>
+	<head>
+		<style>
+		@import url('https://fonts.googleapis.com/css?family=Modak|Oleo+Script+Swash+Caps&display=swap');
+		</style>
+
+		   </head>
+
+
+
+			 <link href="https://fonts.googleapis.com/css?family=Share&display=swap" rel="stylesheet">
+	 		<link href="https://fonts.googleapis.com/css?family=Fascinate+Inline|Lobster|Share&display=swap" rel="stylesheet">
+	 			<div class="card navbar-brand">
+	 		        <h1 class="fontyl navbar-brand">++GAMES</h1>
+
+
+	 		        <button class="btn fontyla navbar-brand menu">Menu</button>
+	 		        <button class="btn fontyla navbar-brand info">Informations</button>
+	 		    		<button class="btn fontyla navbar-brand snaked">Jeu du Snake</button>
+	 		    		<button class="btn fontyla navbar-brand snake">Jeu Du Shifumi</button>
+
+
+
+							{{#if currentUser}}
+								<button class="btn fontyla navbar-brand megamargin-deux login">Bienvenue {{username}}</button>
+							      {{else}}
+	 		    		<button class="btn fontyla navbar-brand megamargin login">Log-in</button>
+							      {{/if}}
+
+
+
+
+	 			</div>
+
+
+<div>
+{{> Template.dynamic template=currentPage}}
+
+</div>
+
+
+<!-- Log Message -->
+<script>
+	function log() {
+	  setTimeout(console.log.bind(console, "%cA colorful log %c Another content", "background: #3F51B5;color:#FFF;padding:5px;border-radius: 5px;line-height: 26px;", ""));
+	  console.log("A simple console.log message");
+	}
+</script>
+
+
+<!-- Footer de la page -->
+
+
+
+	<div class="footer">
+  <div class="content has-text-centered">
+    <p>
+      <strong>++Games</strong> by <a href="#">Arcade - Shuowo</a>
+      <a href="#">Site de Jeux Gratuits</a>
+    </p>
+  </div>
+</div>
+
+</body>

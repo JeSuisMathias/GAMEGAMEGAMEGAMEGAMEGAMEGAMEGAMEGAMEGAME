@@ -1,0 +1,20 @@
+<template name='login'>
+<link href="https://fonts.googleapis.com/css?family=Anton&display=swap" rel="stylesheet">
+  <header>
+    <link href="https://fonts.googleapis.com/css?family=Share&display=swap" rel="stylesheet">
+   <link href="https://fonts.googleapis.com/css?family=Fascinate+Inline|Lobster|Share&display=swap" rel="stylesheet">
+
+   {{#if currentUser}}
+           <h1 class="textynation">Vous déjà connecté !</h1>
+           <h6 class="fontyla texte-center"> Vous pouvez vous déconnecter en utilisant le bouton : {{> loginButtons}} !</h6>
+
+         {{else}}
+
+                <h1 class="textynation">Inscrivez-vous ou connectez vous !</h1>
+                {{> loginButtons}}
+         {{/if}}
+
+
+  </header>
+
+</template>
